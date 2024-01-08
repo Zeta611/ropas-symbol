@@ -1,0 +1,64 @@
+%%
+%% This is file `ropas-symbol.tex'.
+%%
+%% ---------------------------------------------------------------------------
+%% Maintained by Jay Lee
+%% E-mail: jaeho.lee@snu.ac.kr, jhlee@ropas.snu.ac.kr
+%% ---------------------------------------------------------------------------
+%%
+\documentclass{standalone}
+
+\usepackage{libertine}
+
+\usepackage{tikz}
+\definecolor{ropascolor}{RGB}{138,27,120}
+
+\usepackage{tabularray}
+
+\newcommand{\symbolwidth}{30cm}
+
+\begin{document}
+\begin{tblr}{c}
+  \resizebox{\symbolwidth}{\symbolwidth}{%
+    \begin{tikzpicture}
+      \fill[ropascolor]
+        (0, 0) rectangle (18, 1)
+        (18, 0) rectangle (19, 18)
+        (0, 18) rectangle (19, 19)
+        (0, 1) rectangle (1, 18)
+        (8, 2) rectangle (9, 17)
+        (10, 2) rectangle (11, 17)
+        (2, 2) rectangle (9, 3)
+        (10, 2) rectangle (17, 3)
+        (2, 10) rectangle (9, 11)
+        (10, 10) rectangle (17, 11)
+        (3, 16) rectangle (7, 17)
+        (3, 8) rectangle (7, 9)
+        (12, 16) rectangle (16, 17)
+        (12, 8) rectangle (16, 9)
+        (9, 8) rectangle (10, 9)
+        (2, 3) rectangle (3, 9)
+        (2, 11) rectangle (3, 17)
+        (16, 11) rectangle (17, 17)
+        (6, 4) rectangle (7, 8)
+        (12, 4) rectangle (13, 8)
+        (12, 12) rectangle (13, 16)
+        (16, 3) rectangle (17, 7)
+        (16, 8) rectangle (17, 9)
+        (4, 4) rectangle (5, 7)
+        (5, 4) rectangle (6, 5)
+        (4, 12) rectangle (5, 15)
+        (5, 12) rectangle (7, 13)
+        (5, 14) rectangle (7, 15)
+        (6, 15) rectangle (7, 16)
+        (13, 12) rectangle (15, 13)
+        (14, 13) rectangle (15, 15)
+        (13, 4) rectangle (15, 5)
+        (14, 5) rectangle (15, 7)
+        (15, 6) rectangle (16, 7);
+    \end{tikzpicture}%
+  } \\
+  \resizebox{\symbolwidth}{!}{\textsf{\textbf{Programming Research Laboratory}}}\\
+  \resizebox{\symbolwidth}{!}{\color{gray}\textsf{Research On Program Analysis System}}
+\end{tblr}
+\end{document}
