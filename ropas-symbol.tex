@@ -18,8 +18,7 @@
 
 \newcommand{\symbolwidth}{30cm}
 
-\begin{document}
-\begin{tblr}{c}
+\newcommand{\ropassymbol}{
   \resizebox{\symbolwidth}{\symbolwidth}{%
     \begin{tikzpicture}
       \fill[ropascolor]
@@ -59,8 +58,9 @@
         (15, 6) rectangle (16, 7)
         (9, 16) rectangle (10, 17);
     \end{tikzpicture}%
-  } \\
-  \resizebox{\symbolwidth}{!}{\Huge\textsf{\textbf{Programming Research Laboratory}}}\\
-  \resizebox{\symbolwidth}{!}{\Huge\color{ropassubcolor}\textsf{\textbf{Research On Program Analysis System}}}
-\end{tblr}
+  }
+}
+
+\begin{document}
+\ropassymbol
 \end{document}
